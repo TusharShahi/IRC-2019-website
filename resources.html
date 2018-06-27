@@ -39,21 +39,23 @@
 		</div>
 	</div>
 
-	<div id="bar">
+	
+<div id="bar">
 
 		<div id="menubar">
-			<a href="index.html"><div id="logoimage"><img src="images/irclogo.png" right="0" width="300" height="100"></div></a>
-			<a href="res.html" >IRC 2018</a>
-			<a href="reg.html" >Registration</a>
-			<a href="fqu.html" >FAQ</a>
-			<a href="whysponsor.html">Support Us</a>
-			<a href="rules.html">Rules</a>
-			<!--difficulty in adding rescources page here
-			<a href="resources.html" style:"margin-right:30%;">Resources</a> -->
+			<div>
+				<a href="index.html"><div id="logoimage"><img src="images/irclogo.png" right="0" width="300" height="100"></div></a>
+				<a href="res.html" >IRC 2018</a>
+				<a href="reg.html" >Registration</a>
+				<a href="fqu.html" >FAQ</a>
+				<a href="whysponsor.html">Support Us</a>
+				<a href="rules.html">Rules</a>
+				<a href="resources.html">Resources</a> 
+			</div>
 
 
-			<a style="margin: 15px;"><div id="buttonimage"><img src="images/sidebar.png" onclick="javascript:slidein();"></div></a>
-
+				<div id="buttonimage"><img src="images/sidebar.png" onclick="javascript:slidein();"></div>
+		
 		</div>
 
 		<div id="sidebar" class="slidein">
@@ -63,48 +65,51 @@
 			<a href="fqu.html" >FAQ</a>
 			<a href="whysponsor.html">Support Us</a>
 			<a href="rules.html">Rules</a>
-			<a href="resources.html">Resources</a>
+      <a href="resources.html">Resources</a>
 
-			       <div id="socailm">
-       <style type="text/css">
-       #socailm
-       {
-        padding: 30px;
-        min-height: 50px;
-        display: block;
-        }
-        #socailm a{
-          min-height: 20px;
-          min-width: 20px;
-          display: inline-block;
-          }
-          #iconsins{
-            margin-left: 35%;}
-@media screen and (max-width: 600px) {
-  #inconsins{
-    margin-left:20%;
+       <div id="socailm">
+				 <style type="text/css">
+				 #socailm
+				 {
+					padding: 30px;
+					min-height: 50px;
+					display: block;
+					}
+					#socailm a{
+						min-height: 20px;
+						min-width: 20px;
+						display: inline-block;
+						}
 
-  }
-}
-         </style>
-<div id="iconsins" class="movein">
-	<a href="https://www.facebook.com/indianroverchallenge/" class="facebook"><img src="images/socail-fb.png"></a>
-	<a href="#" class="google"><img src="images/socail-gp.png"></a>
-	<a href="#" class="linkedin"><img src="images/socail-in.png"></a>
-	<a href="#" class="youtube"><img src="images/socail-yt.fb.png"></a>
+
+					 </style>
+
+
+<div id="iconsins" style="text-align: center;">
+          <a href="https://www.facebook.com/indianroverchallenge/" class="facebook"><i class="fa fa-facebook"></i></a> 
+          <a href="#" class="google"><i class="fa fa-google"></i></a> 
+          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+          <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+        </div>        
         </div>
-        </div>
-
 
 		</div>
 
-		<!-- social media links
-		<div id="icons">
-			<!-- supposed to be facebook icon -->
-			<!--<img src="images/reach.png" style="margin: 25px 20px; width: 20px;" >
-		</div>-->
-
 	</div>
+	<!-- display icon-bar at same time as top button -->
+		<div id="icon-bar" style="text-align: center;">
+  			<div id="icons" class="movein">
+  				<a href="https://www.facebook.com/indianroverchallenge/" class="facebook"><i class="fa fa-facebook"></i></a>
+  				<a href="#" class="google"><i class="fa fa-google"></i></a>
+  				<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  				<a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+  			</div>
+  			<span style="padding: 5px 5px; color: #ccc;" onclick="iconfunction();" id="icon-arrow">&#9664;</span>
+
+		</div>
+
+
+	
 
 
 	<div class="resourcesimg1"> <!-- i am not sure about what images to use, please add or remove accordingly-->
@@ -179,80 +184,77 @@
     </div>
 
 </div>-->
+
  <div class="footer">
 
-		    <div id="footerwrapper">
+            <div id="footerwrapper">
 
-		        <div id="contact" style="width: 375px">
+                <div id="contact">
 
-		                <div id="number">
-		                    <img src ="images/mobile-phone.png" height="30px" width="30px" >
-		                    <p>Sagar Dhaka</p>
-		                    <p>+91 - </p>
-		                    <p>Shantam Shorewala</p>
-		                    <p>+91</p>
-		                    <p>indianroverchallenge@gmail.com</p>
-		                </div>
+                        <div id="number">
+                            <img src ="images/mobile-phone.png" height="30px" width="30px" >
+                            <p>Sagar Dhaka</p>
+                            <p>+91 - </p>
+                            <p>Shantam Shorewala</p>
+                            <p>+91</p>
+                            <p>indianroverchallenge@gmail.com</p>
+                        </div>
 
-		                <div id="email">
-		                    <img src="images/placeholder.png" height="30px" width="30px">
-		                    <p>Mars Rover Manipal,MAHE Automobile Workshop,MIT, Manipal, India - 576104</p>
+                        <div id="email">
+                            <img src="images/placeholder.png" height="30px" width="30px">
+                            <p>Mars Rover Manipal,MAHE Automobile Workshop,MIT, Manipal, India - 576104</p>
 
-		                </div>
-
-
-		        </div>
-
-		        <div id="fb">
-
-			        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FIndianRoverChallenge&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=187120771934670" width="300" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" id="facebook_iframe" class="facebook_iframe"></iframe>
-
-			    </div>
-
-		        <div  id="organization">
-
-		            <div id="supporters">
-
-			            <div style="margin-right: 5px;">
-			        		<h4>Backed By</h4>
-			                <img src="images/marssociety.png" id="msl" class='large-logo' style="padding-bottom: 10px;">
-			            </div>
-
-			            <div>
-			            	<h4>Powered By</h4>
-			                <img src="images/mahindralogo2.png" id="mahi" class='medium-logo' style="padding-bottom: 10px;">
-			            </div>
+                        </div>
 
 
-		            </div>
+                </div>
 
-		        	<div id="organizers">
-			            <div>
-			                <img src="images/mahe.png" class='large-logo' style="padding-bottom: 10px; margin-left: 0px; margin-right: 0px;">
-			            </div>
-			            <div>
-				                <img src="images/logo.png" class='small-logo' style="margin: 0px;">
-				        </div>
-			        </div>
+                <div id="fb">
 
-		            <!--
-		            <div>
-		                <img src="images/mit.png" width="80" style="padding-bottom: 10px">
-		            </div>
-		            -->
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FIndianRoverChallenge&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=187120771934670" width="300" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" id="facebook_iframe" class="facebook_iframe"></iframe>
+
+                </div>
+
+                <div  id="organization">
+
+                    <div id="supporters">
+
+                        <div>
+                            <h4>Backed By</h4>
+                            <img src="images/marssociety.png" id="msl" class='large-logo' style="padding-bottom: 10px;">
+                        </div>
+
+                        <div>
+                            <h4>Powered By</h4>
+                            <img src="images/mahindralogo2.png" id="mahi" class='medium-logo' style="padding-bottom: 10px;" >
+                        </div>
 
 
-		        </div>
+                    </div>
 
-		    </div>
+                    <div id="organizers">
+                        <div>
+                            <img src="images/mahe.png" class='large-logo' style="padding-bottom: 10px;  margin-right: 30px;">
+                        </div>
+                        <div>
+                                <img src="images/logo.png" class='small-logo' style="margin: 0px;">
+                        </div>
+                    </div>
 
-		    <div>
+                    <!--
+                    <div>
+                        <img src="images/mit.png" width="80" style="padding-bottom: 10px">
+                    </div>
+                    -->
+
+
+                </div>
+
+            </div>
 
 
 
-		    </div>
-
-		</div>
+        </div>
 
 </div>
 	<!--<style>

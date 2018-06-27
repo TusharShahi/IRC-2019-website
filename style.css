@@ -623,6 +623,7 @@ height: 220px;
   }
 }
 .imagesa{
+width: 80%;
             text-align: center;
           display: flex;
   justify-content: space-around;
@@ -645,7 +646,7 @@ height: 220px;
             .imagesa>div
             {
               margin: 0 auto;
-              width: 60%;
+              width: 90%;
             }
         }
 
@@ -1626,7 +1627,7 @@ width: auto;
 
 .resourcesimg1 img
 {
-  margin: 15px 0px ;
+  margin: 15px 0px;
   width: 40%;
 }
 .resourcesimg2
