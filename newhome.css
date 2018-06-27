@@ -75,12 +75,10 @@ font-family: 'montserrat';
           min-width: 20px;
           display: inline-block;
           }
-          #iconsins{
-            margin-left: 37%;}
+ 
 
 @media screen and (max-width: 600px) {
-  #inconsins{
-    margin-left:20%;}}
+ }
 
 @media screen and (min-width: 601px) {
   .para1 p {
@@ -101,11 +99,7 @@ font-family: 'montserrat';
   .para2 p {
     font-size: 12px;
   }
-  .contentimg img
-  {
-    width: 60px;
-    height: 60px;
-  }
+
 }
 
  @media screen and (min-width: 601px) {
@@ -139,7 +133,7 @@ font-family: 'montserrat';
     width: 900px;
     font-family: 'montserrat';
     font-size: 15px;
-    display: inline-block;
+    display: flex;
 }
 
 #logoimage img
@@ -147,6 +141,16 @@ font-family: 'montserrat';
   width: 150px;
   height: 90px;
 }
+#menubar div
+{
+  display: inline-block;
+}
+
+#menubar div:nth-child(2)
+{
+  display: none;
+}
+
 #menubar a {
     float: left;
     display: block;
@@ -157,19 +161,18 @@ font-family: 'montserrat';
 
 }
 
+
 #menubar a:nth-child(1)
 {
 margin: 0px;
 }
+
+
 #menubar a:hover{
     transition: 0.3s ease-in;
     color: #48e0a4;
 }
 
-#menubar a:nth-child(7)
-{
-  display: none;
-}
 #sidebar
 {
 
@@ -706,6 +709,10 @@ width: 100px;
       margin:0px 15px;
     }
 
+    #supporters div:nth-child(1)
+    {
+      margin-right: 5px;
+    }
 
     /* ////// */
     /* FOOTER ENDS */
@@ -730,6 +737,10 @@ width: 100px;
     {
       width: 20%;
       display: inline-block;
+    }
+    #steps img
+    {
+      width: 80%;
     }
 
     #sponsors
@@ -916,16 +927,17 @@ width: auto;
 {
   display: block;
 }
-#menubar a:nth-child(7)
+#menubar div:nth-child(2)
 {
+  padding: 10px;
+  display: inline-block;
   float: right;
-  display: block;
 }
 
 #buttonimage img
 {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
 #sidebar
 {
@@ -952,9 +964,10 @@ width: auto;
 }
 .top
 {
- background-size: contain;
+
  background-repeat: no-repeat;
  background-color: #181849;
+ background-position-x: 50%; 
 }
     #footerwrapper >div >div
     {   color: #eee;
@@ -968,7 +981,7 @@ width: auto;
     }
   #footerwrapper
     {
-        height: 1400px;
+        height: 1200px;
 
     }
     #contact
@@ -992,7 +1005,7 @@ width: auto;
     {
     position: static;
     text-align: center;
-    margin-bottom: 30%;
+    margin-bottom: 15%;
     }
     #email p
     {
@@ -1003,7 +1016,7 @@ width: auto;
     {
       position: static;
       text-align: center;
-      margin-bottom: 30%;
+      margin-bottom: 10%;
     }
     #contact #email p
     {
@@ -1027,15 +1040,24 @@ width: auto;
       position: static;
       text-align: center;
     }
+    #organizers div:nth-child(1) img
+    {
+      margin-right: 0px !important;
+    }
     #organizers img
     {
         width: 200px;
+    }
+    #organizers div:nth-child(2) img
+    {
+      width: 100px;
     }
     #supporters>div
     {
       margin: 0px;
       padding: 0px;
     }
+
     #supporters
     {
       position: static;
@@ -1045,7 +1067,7 @@ width: auto;
     {
         font-size: 25px;
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
     #supporters img
     {
@@ -1056,13 +1078,13 @@ width: auto;
     #supporters #msl
     {
         width: 150px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         position: static;
     }
     #supporters #mahi
     {
         width: 160px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
 }
@@ -1082,17 +1104,6 @@ width: auto;
 {
   display: block;
 }
-#menubar a:nth-child(7)
-{
-  float: right;
-  display: block;
-}
-
-#buttonimage img
-{
-  width: 30px;
-  height: 30px;
-}
 #sidebar
 {
   display: block;
@@ -1108,14 +1119,6 @@ width: auto;
   display: none;
 }
 
-#footerwrapper > div
-{
-  width: 32%;
-}
-iframe
-{
-  width: 200px;
-}
 #countdates
 {
   font-size: 20px;
@@ -1142,21 +1145,11 @@ width: auto;
 {
   display: block;
 }
-#menubar a:nth-child(7)
-{
-  float: right;
-  display: block;
-}
 .top
 {
   height: 220px;
 }
 
-#buttonimage img
-{
-  width: 30px;
-  height: 30px;
-}
 #sidebar
 {
   display: block;
@@ -1172,18 +1165,6 @@ width: auto;
   display: none;
 }
 
-#footerwrapper > div
-{
-  width: 32%;
-}
-iframe
-{
-  width: 200px;
-}
-#organizers img
-{
-  width: 50%
-}
 #supporters img
 {
   width: 50%
@@ -1238,17 +1219,7 @@ width: auto;
 {
   display: block;
 }
-#menubar a:nth-child(7)
-{
-  float: right;
-  display: block;
-}
 
-#buttonimage img
-{
-  width: 30px;
-  height: 30px;
-}
 #sidebar
 {
   display: block;
@@ -1264,15 +1235,7 @@ width: auto;
   display: none;
 }
 
-#footerwrapper > div
-{
-  width: 32%;
-}
 
-#organizers img
-{
-  width: 50%
-}
 #supporters img
 {
   width: 50%
@@ -1336,23 +1299,6 @@ width: auto;
   display: none;
 }
 
-#footerwrapper > div
-{
-  width: 32%;
-}
-iframe
-{
-  width: 125px;
-  left: 20px;
-}
-#organizers img
-{
-  width: 100%
-}
-#supporters img
-{
-  width: 50%
-}
 #footerwrapper > div p
 {
   font-size: 9px;
