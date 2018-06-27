@@ -66,7 +66,7 @@ document.getElementById('icon-bar').style.display="none";
 
 document.addEventListener('DOMContentLoaded', function() {
   var facebookIframe = document.querySelector('#facebook_iframe');
-  setupFBframe(facebookIframe);
+  //setupFBframe(facebookIframe);
  
   /* begin Window Resize                                    
   ############################################ */
@@ -86,10 +86,10 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
 
-    function actualResizeHandler() {
+    /*function actualResizeHandler() {
       document.querySelector('#facebook_iframe').removeAttribute('src');
-      setupFBframe(facebookIframe);
-    }
+    //  setupFBframe(facebookIframe);
+    }*/
   })();
   /* end Window Resize
   ############################################ */

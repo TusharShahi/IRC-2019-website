@@ -348,6 +348,7 @@ padding-top: 50px;
 #contact
 {
   color: #00bcf2;
+  width: 375px;
 }
 
 .text-copy {
@@ -709,11 +710,7 @@ width: 100px;
       margin:0px 15px;
     }
 
-    #supporters div:nth-child(1)
-    {
-      margin-right: 5px;
-    }
-
+  
     /* ////// */
     /* FOOTER ENDS */
     /* ////// */
@@ -873,14 +870,7 @@ margin: 20px auto;
   width: auto;
 
 }
-#footerwrapper>div:nth-child(1)
-{
-width: 30%;
-}
-#footwrapper>div:nth-child(2)
-{
-  width: 25%;
-}
+
 
     .large-logo
     {
@@ -913,6 +903,17 @@ width: 80px;
 
 @media screen and (max-width: 768px)
 {
+  h2
+  {
+    font-size: 20px;
+  }
+.top
+{
+
+ background-repeat: no-repeat;
+ background-color: #181849;
+ background-position-x: 50%; 
+}
 #menubar
 {
   display: block;
@@ -948,12 +949,20 @@ width: auto;
   width: 100px;
   height: 100px;
 }
+#countdown
+{
+  min-height: 150px;
+}
 
 #gototop
 {
   display: none;
 }
-
+#clockdiv
+{
+  margin-top: 0px;
+  font-size: 15px;
+}
 
 #countdates
 {
@@ -962,12 +971,12 @@ width: auto;
   padding-top: 20px;
   padding-left: 0px;
 }
-.top
-{
 
- background-repeat: no-repeat;
- background-color: #181849;
- background-position-x: 50%; 
+
+#roverchallengeseries .button
+{
+  font-size: 12px;
+  padding: 8px;
 }
     #footerwrapper >div >div
     {   color: #eee;
@@ -979,10 +988,14 @@ width: auto;
       display: block;
       width: auto;
     }
+ #footerwrapper div:nth-child(1),#footerwrapper div:nth-child(3)
+ 
+ {
+  width: 375px;
+ }
   #footerwrapper
     {
-        height: 1200px;
-
+        height: 1100px;
     }
     #contact
     {
@@ -1034,6 +1047,7 @@ width: auto;
     width: auto;
     display: block;
     text-align: center;
+    padding: 0;
     }
     #organizers
     {
@@ -1065,7 +1079,7 @@ width: auto;
     }
     #supporters h4
     {
-        font-size: 25px;
+        font-size: 15px;
         text-align: center;
         margin-bottom: 10px;
     }
@@ -1268,15 +1282,9 @@ width: auto;
 {
   display: block;
 }
-#menubar a:nth-child(7)
-{
-  float: right;
-  display: block;
-}
 .top
 {
   height: 200px;
-  background-position: -2.2px 30px;
 }
 
 #buttonimage img
