@@ -953,7 +953,10 @@ width: auto;
 {
   min-height: 150px;
 }
-
+#icon-bar
+{
+      display: none;
+}
 #gototop
 {
   display: none;

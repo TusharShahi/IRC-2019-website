@@ -6,12 +6,12 @@ window.addEventListener('scroll',function() {
      if (window.pageYOffset >= sticky) {
         console.log("running if");
         menubar.classList.add('sticky');
-        content.style.marginTop = 90;
+        document.getElementById("content").style.marginTop = 90;
       } 
       else {
         console.log("else");
         menubar.classList.remove('sticky');
-          content.style.marginTop = 0;
+                  document.getElementById("content").style.marginTop = 0;
       }
       if(window.pageYOffset >= 800)
       {
@@ -32,9 +32,9 @@ document.getElementById('icon-bar').style.display="none";
     
     });
 
-    var f = 0;
+//    var f = 0;
 
-
+/*
     function setupFBframe(frame) {
   var container = frame.parentNode;
 
@@ -60,10 +60,10 @@ document.getElementById('icon-bar').style.display="none";
   frame.height = containerHeight;
   frame.src = src;
 }
-
+*/
 /* begin Document Ready                                     
 ############################################ */
-
+/*
 document.addEventListener('DOMContentLoaded', function() {
   var facebookIframe = document.querySelector('#facebook_iframe');
   setupFBframe(facebookIframe);
@@ -72,8 +72,8 @@ document.addEventListener('DOMContentLoaded', function() {
   ############################################ */
   
   // Why resizeThrottler? See more : https://developer.mozilla.org/ru/docs/Web/Events/resize
-  (function() {
-    window.addEventListener("resize", resizeThrottler, false);
+  /*(function() {
+  /*  window.addEventListener("resize", resizeThrottler, false);
 
     var resizeTimeout;
 
@@ -93,6 +93,6 @@ document.addEventListener('DOMContentLoaded', function() {
   })();
   /* end Window Resize
   ############################################ */
-});
+//});
 /* end Document Ready                                     
 ############################################ */

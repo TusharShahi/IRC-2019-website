@@ -39,6 +39,54 @@ font-family: 'montserrat';
 }
 
 
+
+@media screen and (min-width: 601px) {
+  .para1 p {
+    font-size: 18px;
+  }}
+
+@media screen and (max-width: 600px) {
+  .para1 p { font-size: 12px;
+  }}
+
+@media screen and (min-width: 601px) {
+  .para2 p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .para2 p {
+    font-size: 12px;
+  }
+
+}
+
+ @media screen and (min-width: 601px) {
+  #countdates{
+    font-size: 20px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  #countdates {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .paratext p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .paratext p {
+    font-size: 12px;
+  }
+}
+
 .img1
 {
     display: inline-block;
@@ -51,6 +99,26 @@ font-family: 'montserrat';
     z-index: 200;
     height: 90px;
 }
+   #myProgress {
+  width: 40%;
+  background-color: #ddd;
+  margin-left:33%;
+  margin-top:27px;
+  width: 31.5%;}
+
+  #socailm
+       {
+        padding: 30px;
+        min-height: 50px;
+        display: block;
+        }
+        #socailm a{
+          min-height: 20px;
+          min-width: 20px;
+          display: inline-block;
+          }
+ 
+/**MENU BAR **/
 
 #menubar
 {
@@ -72,11 +140,6 @@ font-family: 'montserrat';
   display: inline-block;
 }
 
-#menubar div:nth-child(2)
-{
-  display: none;
-}
-
 #menubar a {
     float: left;
     display: block;
@@ -92,12 +155,22 @@ font-family: 'montserrat';
 {
 margin: 0px;
 }
+
+#menubar div:nth-child(2)
+{
+  display: none;
+}
+
+
+#menubar a:hover{
+    transition: 0.3s ease-in;
+    color: #48e0a4;
+}
+
 #sidebar
 {
-  position: absolute;
-  left: 0px;
-  right: 0px;
 
+  position: relative;
   display: none;
   background: #373737;
   overflow: hidden;
@@ -106,18 +179,16 @@ margin: 0px;
 
 #sidebar a
 {  color: #ccc;
-  margin: 2px;
+
   font-family: 'Montserrat';
   text-decoration: none;
   display: block;
   text-align: center;
 }
-
 #sidebar a:active
 {
   background-color: #222;
 }
-
 .slideout
 {
   max-height: 300px;
@@ -130,6 +201,7 @@ margin: 0px;
 }
 
 
+/**MENU BAR ENDS **/
 
 #content
   {
@@ -160,12 +232,6 @@ margin: 0px;
 
 }
 
-.faqcont1 > div
-{
-  width: 80%;
-  margin: 0 auto;
-
-}
 .faqcont1 >div> div
 {
     margin: 20px auto;
@@ -358,14 +424,10 @@ vertical-align: middle;
     text-align: justify;
     font-family: 'Montserrat', sans-serif;
     width: 80%;
-    margin: center auto;
+    margin: 80px auto;
+  margin-bottom: 40px;
   }
-#note p
-{
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 50px;
-}
+
 .but
 {
     text-align: center;
@@ -468,10 +530,7 @@ vertical-align: middle;
     position: fixed;
     top: 0px;
   }
-#note p{
-    width: 80%;
-    margin-left: 25%;
-}
+
 #abt p{
     width: 100%;
 }
@@ -555,38 +614,47 @@ height: 220px;
   }
   .resourcesimg2 img{
     width: 50%;
-    height: 200px;
   }
   .resourcesimg3 img{
     width: 80%;
-    height: 150px;
-    margin-left: 10px;
   }
   .resourcesimg4 img{
-    height: 200px;
     width: 40%;
   }
 }
 .imagesa{
             text-align: center;
-
-
+          display: flex;
+  justify-content: space-around;
         }
-        @media screen and (max-width: 600px){
+.imagesa > div
+{
+  width: 30%;
+  display: inline-block;
+}
+.imagesa img
+{
+  width: 100%;
+}
+        @media screen and (max-width: 768px){
             .imagesa{
+              flex-wrap: wrap;
                 flex-direction:column;
-
             }
             
+            .imagesa>div
+            {
+              margin: 0 auto;
+              width: 60%;
+            }
         }
 
 
 
 
 #resultsimg img {
-  width:auto;
+  width:100%;
   text-align: center;
-  margin-left: 200px;
 }
 @media screen and (max-width:601px) {
   #resultsimg img {
@@ -717,8 +785,6 @@ flex-wrap: wrap;
 .link--arrowed
 {
   display: inline-block;
-  height: 2rem;
-  line-height: 2rem;
 
 }
 .link--arrowed .arrow-icon
@@ -1141,16 +1207,17 @@ width: auto;
 {
   display: block;
 }
-#menubar a:nth-child(7)
+#menubar div:nth-child(2)
 {
+  padding: 10px;
+  display: inline-block;
   float: right;
-  display: block;
 }
 
 #buttonimage img
 {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
 #sidebar
 {
@@ -1180,6 +1247,11 @@ width: auto;
  background-repeat: no-repeat;
  background-color: #181849;
 }
+#note h2
+{
+  font-size: 20px;
+} 
+
 #footerwrapper
     {
         height: 1200px;
@@ -1320,11 +1392,6 @@ width: auto;
 {
   display: block;
 }
-#menubar a:nth-child(7)
-{
-  float: right;
-  display: block;
-}
 
 #buttonimage img
 {
@@ -1368,11 +1435,6 @@ width: auto;
 }
 #menubar a:nth-child(1)
 {
-  display: block;
-}
-#menubar a:nth-child(7)
-{
-  float: right;
   display: block;
 }
 .top
@@ -1437,11 +1499,6 @@ width: auto;
 {
   display: block;
 }
-#menubar a:nth-child(7)
-{
-  float: right;
-  display: block;
-}
 
 #buttonimage img
 {
@@ -1498,11 +1555,6 @@ width: auto;
 }
 #menubar a:nth-child(1)
 {
-  display: block;
-}
-#menubar a:nth-child(7)
-{
-  float: right;
   display: block;
 }
 .top
@@ -1571,11 +1623,11 @@ width: auto;
   display: inline-block;
   text-align: center;
 }
+
 .resourcesimg1 img
 {
+  margin: 15px 0px ;
   width: 40%;
-  height:25%;
-  cursor: pointer;
 }
 .resourcesimg2
 {
@@ -1586,7 +1638,6 @@ width: auto;
 .resourcesimg2 img
 {
   width: 50%;
-  height:400px;
   cursor: pointer;
 }
 .resourcesimg3
@@ -1598,7 +1649,6 @@ width: auto;
 .resourcesimg3 img
 {
   width: 90%;
-  height:200px;
   cursor: pointer;
 }
 .resourcesimg4
@@ -1610,7 +1660,6 @@ width: auto;
 .resourcesimg4 img
 {
   width: 40%;
-  height:500px;
   cursor: pointer;
 }
 @media screen and (min-width: 601px) {

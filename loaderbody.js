@@ -1,5 +1,4 @@
  $(document).ready(function(){
-      console.log("working");
       if(screen.width<550){
         $("#loader").hide();
         $("#website").show();
@@ -8,21 +7,21 @@
       else
       {
         $("#loader").show();
-        $("#icon-bar").show();
-        $("#website").hide();
 
-        $("#website").delay(8000).fadeIn(700);
+  //      $("#website").hide();
+
+//        $("#website").delay(8000).fadeIn(700);
       }
     });
 
-      setTimeout(function(){
+ /*     setTimeout(function(){
   $('#loader').remove();
-}, 8000);
+}, 8000);*/
 
 
       ////////facebook res
 
-      function setupFBframe(frame) {
+      /*function setupFBframe(frame) {
   var container = frame.parentNode;
 
   var containerWidth = container.offsetWidth;
@@ -51,15 +50,15 @@
 /* begin Document Ready                                     
 ############################################ */
 
-document.addEventListener('DOMContentLoaded', function() {
-  var facebookIframe = document.querySelector('#facebook_iframe');
-  setupFBframe(facebookIframe);
+//document.addEventListener('DOMContentLoaded', function() {
+ // var facebookIframe = document.querySelector('#facebook_iframe');
+ // setupFBframe(facebookIframe);
  
   /* begin Window Resize                                    
   ############################################ */
   
   // Why resizeThrottler? See more : https://developer.mozilla.org/ru/docs/Web/Events/resize
-  (function() {
+  /*(function() {
     window.addEventListener("resize", resizeThrottler, false);
 
     var resizeTimeout;
@@ -80,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
   })();
   /* end Window Resize
   ############################################ */
-});
+//});*/
 /* end Document Ready                                     
 ############################################ */
 
@@ -94,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var mousex = event.clientX;
       var mousey = event.clientY;
       var bgheader = document.getElementsByClassName('top');
-      bgheader[0].style.backgroundPosition = mousex/30 + 'px ' + mousey/40 + 'px';
+      if(document.width()>768) bgheader[0].style.backgroundPosition = mousex/30 + 'px ' + mousey/40 + 'px';
   });
     
   //window.onscroll = menuBar;
