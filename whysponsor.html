@@ -16,6 +16,7 @@
 
 <link rel="stylesheet" type="text/css" href="style.css">
 <link href="https://fonts.googleapis.com/css?family=Merienda+One|Montserrat|Open+Sans" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
 
@@ -41,21 +42,22 @@
 
 	<!-- the menu bar at home works perfectly with javascript. due to multiple css files, there is some issue. make sure this pages menu bar also works. -->
 
-  <div id="bar">
+<div id="bar">
 
     <div id="menubar">
-      <a href="index.html"><div id="logoimage"><img src="images/irclogo.png" right="0" width="300" height="100"></div></a>
-      <a href="res.html" >IRC 2018</a>
-      <a href="reg.html" >Registration</a>
-      <a href="fqu.html" >FAQ</a>
-      <a href="whysponsor.html">Support Us</a>
-      <a href="rules.html">Rules</a>
-      <!--difficulty in adding rescources page here
-      <a href="resources.html" style:"margin-right:30%;">Resources</a> -->
+      <div>
+        <a href="index.html"><div id="logoimage"><img src="images/irclogo.png" right="0" width="300" height="100"></div></a>
+        <a href="res.html" >IRC 2018</a>
+        <a href="reg.html" >Registration</a>
+        <a href="fqu.html" >FAQ</a>
+        <a href="whysponsor.html">Support Us</a>
+        <a href="rules.html">Rules</a>
+        <a href="resources.html">Resources</a> 
+      </div>
 
 
-      <a style="margin: 15px;"><div id="buttonimage"><img src="images/sidebar.png" onclick="javascript:slidein();"></div></a>
-
+        <div id="buttonimage"><img src="images/sidebar.png" onclick="javascript:slidein();"></div>
+    
     </div>
 
     <div id="sidebar" class="slidein">
@@ -67,47 +69,35 @@
       <a href="rules.html">Rules</a>
       <a href="resources.html">Resources</a>
 
-     <div id="socailm">
-       <style type="text/css">
-       #socailm
-       {
-        padding: 30px;
-        min-height: 50px;
-        display: block;
-        }
-        #socailm a{
-          min-height: 20px;
-          min-width: 20px;
-          display: inline-block;
+       <div id="socailm">
+         <style type="text/css">
+         #socailm
+         {
+          padding: 30px;
+          min-height: 50px;
+          display: block;
           }
-          #iconsins{
-            margin-left: 35%;}
-@media screen and (max-width: 600px) {
-  #inconsins{
-    margin-left:20%;
+          #socailm a{
+            min-height: 20px;
+            min-width: 20px;
+            display: inline-block;
+            }
 
-  }
-}
-         </style>
-<div id="iconsins" class="movein">
-	<a href="https://www.facebook.com/indianroverchallenge/" class="facebook"><img src="images/socail-fb.png"></a>
-	<a href="#" class="google"><img src="images/socail-gp.png"></a>
-	<a href="#" class="linkedin"><img src="images/socail-in.png"></a>
-	<a href="#" class="youtube"><img src="images/socail-yt.fb.png"></a>
-        </div>
-        </div>
 
+           </style>
+
+
+<div id="iconsins" style="text-align: center;">
+          <a href="https://www.facebook.com/indianroverchallenge/" class="facebook"><i class="fa fa-facebook"></i></a> 
+          <a href="#" class="google"><i class="fa fa-google"></i></a> 
+          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+          <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+        </div>        
+        </div>
 
     </div>
 
-    <!-- social media links
-    <div id="icons">
-      <!-- supposed to be facebook icon -->
-      <!--<img src="images/reach.png" style="margin: 25px 20px; width: 20px;" >
-    </div>-->
-
   </div>
-
 
 	<div id="content">
 		<style type="text/css">
@@ -171,7 +161,7 @@
 
       <div class="benifit-image">
 
-        <img src="images/internew.png" height="190" width="30" onmouseover="this.src='images/inter.png'" onmouseout="this.src='images/internew.png'">
+        <img src="images/internew.png" onmouseover="this.src='images/inter.png'" onmouseout="this.src='images/internew.png'">
 
       </div>
 
@@ -187,7 +177,7 @@
 
       <div class="benifit-image">
 
-        <img src="images/audience.png" height="190" width="30" onmouseover="this.src='images/audiencechange.png'" onmouseout="this.src='images/audience.png'">
+        <img src="images/audience.png" onmouseover="this.src='images/audiencechange.png'" onmouseout="this.src='images/audience.png'">
 
       </div>
 
@@ -203,7 +193,7 @@
 
       <div class="benifit-image">
 
-        <img src="images/offsp.png" height="190" width="30" onmousehover="this.src='images/onsp.png'" onmouseout="this.src='images/offsp.png'">
+        <img src="images/offsp.png" onmousehover="this.src='images/onsp.png'" onmouseout="this.src='images/offsp.png'">
 
       </div>
 
@@ -226,11 +216,11 @@
 }
 </style>
 
- <div class="footer" style="margin-top:0px">
+<div class="footer" style="margin-top: 0px;">
 
-            <div id="footerwrapper" style="height: 400px;">
+            <div id="footerwrapper">
 
-                <div id="contact" style="width: 375px;">
+                <div id="contact">
 
                         <div id="number">
                             <img src ="images/mobile-phone.png" height="30px" width="30px" >
@@ -252,7 +242,7 @@
 
                 <div id="fb">
 
-                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FIndianRoverChallenge&tabs=timeline&width=240&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=187120771934670" width="300" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" id="facebook_iframe" class="facebook_iframe"></iframe>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FIndianRoverChallenge&tabs=timeline&width=300&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=187120771934670" width="300" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" id="facebook_iframe" class="facebook_iframe"></iframe>
 
                 </div>
 
@@ -260,7 +250,7 @@
 
                     <div id="supporters">
 
-                        <div style="margin-right: 5px;">
+                        <div>
                             <h4>Backed By</h4>
                             <img src="images/marssociety.png" id="msl" class='large-logo' style="padding-bottom: 10px;">
                         </div>
@@ -282,24 +272,12 @@
                         </div>
                     </div>
 
-                    <!--
-                    <div>
-                        <img src="images/mit.png" width="80" style="padding-bottom: 10px">
-                    </div>
-                    -->
-
-
                 </div>
 
             </div>
 
-            <div>
+  </div>
 
-
-
-            </div>
-
-        </div>
 </body>
 <script type="text/javascript" src="mobilemenu.js"></script>
 <script type="text/javascript" src="whysponsor.js"></script>

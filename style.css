@@ -730,8 +730,6 @@ width: 80%;
   }
   li{
     width: 100%;
-    margin-left:-80px;
-    text-align: left;
   }
 }
 #benifits
@@ -752,7 +750,7 @@ flex-wrap: wrap;
 }
 .benifit
 {
-  flex-basis: 30%;
+  width: 30%;
 }
 .benifit-image
 {
@@ -761,7 +759,7 @@ flex-wrap: wrap;
 }
 .benifit-image img
 {
-  width: 80%;
+  width: 100%;
 }
 .benifit-text h4
 {
@@ -1020,11 +1018,10 @@ height: 220px;
 .rulescont
 {
     font-family: 'montserrat';
-    margin-left: 100px;
-    margin-right: 100px;
     text-align: justify;
-    margin-top: 50px;
-
+    width: 80%; 
+    margin: 0 auto;
+    margin-top: 80px;
 }
 
 
