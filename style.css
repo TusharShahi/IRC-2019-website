@@ -206,11 +206,25 @@ margin: 0px;
 #content
   {
     padding-top: 0px;
+    text-align: center;
+    margin: 0 auto;
   }
   #content>div
   {
+    margin: 0 auto;
     width: 80%;
 
+  }
+
+  .buttondiv 
+  {
+    display: flex;
+    padding: 20px 0px;
+    flex-direction: row;
+  }
+  .buttondiv div
+  {
+    display: inline-block;
   }
 
 /*faq page*/
@@ -431,7 +445,6 @@ vertical-align: middle;
 .but
 {
     text-align: center;
-    margin: 20px auto;
 }
 .button
 {
@@ -478,16 +491,12 @@ vertical-align: middle;
     font-family: 'Montserrat', sans-serif;
     margin-top: 50px;
     font-size: 25px;
-    margin-left: 100px;
-    margin-right: 100px;
 }
 
 #abt p
 {
     text-align: justify;
     font-family: 'Montserrat', sans-serif;
-  margin-left: 100px;
-    margin-right: 100px;
 }
 .top h1
 {
@@ -501,6 +510,15 @@ vertical-align: middle;
     font-size: 90px;
     text-shadow: 4px 4px #AED6F1;
 }
+
+#down
+{
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    padding-top: 30px;
+}
+
 @media screen and (min-width: 601px) {
   .top h1 {
     font-size: 30px;
@@ -566,11 +584,6 @@ height: 220px;
   #down {
     font-size: 30px;
   }
-  .but
-
-  {
-    transform:translate(10px,-20px);
-  }
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
@@ -578,18 +591,13 @@ height: 220px;
   #down {
     font-size: 18px;
     text-align: left;
-    margin-left: -30px;
-    transform:translate(-20px,0px);
+    margin-top: 0px;
+    padding-top: 0px;
   }
   .centered-container{
     width: 400px;
-    text-align: left;
+    text-align: center;
     font-size: 18px;
-    margin-left: 10px;
-     transform: translate(-150px,-10px);
-  }
-  #abt p{
-    margin-left: 12%;
   }
 }
 @media screen and (min-width: 601px) {
@@ -603,9 +611,7 @@ height: 220px;
   #abt h3 {
     /*font-size: 18px;*/
     font-size: 18px;
-    min-width: 100%;
     text-align: left;
-    margin-left: 55px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -647,6 +653,10 @@ width: 80%;
             {
               margin: 0 auto;
               width: 90%;
+            }
+            #content>div
+            {
+              width: auto;
             }
         }
 
@@ -760,13 +770,6 @@ flex-wrap: wrap;
 }
 
 
-#down
-{
-    margin-left: 100px;
-    margin: 50px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-}
 .centered-container
 {
   /*display: -webkit-inline-box;
@@ -780,7 +783,7 @@ flex-wrap: wrap;
   cursor: pointer;
   font-weight: 400;
   text-decoration: none;
-  margin-left: 180px;
+  margin-left: 80px;
 }
 
 .link--arrowed
@@ -1190,6 +1193,14 @@ width: 80px;
   padding-top: 20px;
   padding-left: 0px;
 }
+#down
+{
+  font-size: 20px;
+}
+.link--arrowed {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
 }
 
 @media screen and (max-width: 768px)
@@ -1376,6 +1387,12 @@ width: auto;
         width: 160px;
         margin-bottom: 10px;
     }
+    .button
+    {
+      font-size: 12px;
+      padding: 10px;
+    }
+
 }
 @media screen and (max-width: 680px)
 {
@@ -1420,6 +1437,23 @@ width: auto;
   margin: auto;
   padding-top: 20px;
   padding-left: 0px;
+}
+.buttondiv
+{
+flex-direction: column;
+}
+.buttondiv div
+{
+  margin: 0 auto;
+
+}
+.buttondiv a
+{
+  margin: 0 auto;
+}
+.link--arrowed
+{
+  width : auto;
 }
 }
 @media screen and (max-width: 650px)

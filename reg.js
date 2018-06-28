@@ -63,16 +63,16 @@ document.getElementById('icon-bar').style.display="none";
 
 /* begin Document Ready                                     
 ############################################ */
-
+/*
 document.addEventListener('DOMContentLoaded', function() {
-  var facebookIframe = document.querySelector('#facebook_iframe');
-  setupFBframe(facebookIframe);
+//  var facebookIframe = document.querySelector('#facebook_iframe');
+  //setupFBframe(facebookIframe);
  
   /* begin Window Resize                                    
   ############################################ */
   
   // Why resizeThrottler? See more : https://developer.mozilla.org/ru/docs/Web/Events/resize
-  (function() {
+  /*(function() {
     window.addEventListener("resize", resizeThrottler, false);
 
     var resizeTimeout;
@@ -93,6 +93,6 @@ document.addEventListener('DOMContentLoaded', function() {
   })();
   /* end Window Resize
   ############################################ */
-});
+//});
 /* end Document Ready                                     
 ############################################ */

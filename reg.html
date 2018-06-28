@@ -16,6 +16,7 @@
   <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Anton|Open+Sans|Roboto" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
 
@@ -104,16 +105,12 @@
 			</p>
 		</div>
 
-		<div class="but">
+		<div class="buttondiv">
+    <div class="but">
 			<button class="button">Register Here</button>
 		</div>
 
 		<div id="down">
-			<style type="text/css">
-
-
-			</style>
-
 			<section class="centered-container"><a class="link link--arrowed" href="#">IRC 2019 Rulebook
 			    <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
 			      <g fill="none" stroke="#2175FF" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
@@ -122,7 +119,7 @@
 			      </g>
 			    </svg></a></section>
 		</div>
-
+  </div>
 		<div id="abt">
 			<style type="text/css">
 
@@ -193,21 +190,12 @@
 </div>
 
 </div>-->
-<!--media query for footer-->
-<style>
-@media screen and (max-width:600px){
-  .footer{
-    height:1450px;
-  }
-}
-</style>
 
+<div class="footer">
 
- <div class="footer">
+            <div id="footerwrapper">
 
-            <div id="footerwrapper" style="height: 350px;">
-
-                <div id="contact" style="width: 375px;">
+                <div id="contact">
 
                         <div id="number">
                             <img src ="images/mobile-phone.png" height="30px" width="30px" >
@@ -229,7 +217,7 @@
 
                 <div id="fb">
 
-                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FIndianRoverChallenge&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=187120771934670" width="300" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" id="facebook_iframe" class="facebook_iframe"></iframe>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FIndianRoverChallenge&tabs=timeline&width=300&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=187120771934670" width="300" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" id="facebook_iframe" class="facebook_iframe"></iframe>
 
                 </div>
 
@@ -237,7 +225,7 @@
 
                     <div id="supporters">
 
-                        <div style="margin-right: 5px;">
+                        <div>
                             <h4>Backed By</h4>
                             <img src="images/marssociety.png" id="msl" class='large-logo' style="padding-bottom: 10px;">
                         </div>
@@ -276,7 +264,7 @@
 
             </div>
 
-        </div>
+ 
 
 
 
@@ -370,46 +358,6 @@ console.log(pageYOffset);
 </script>-->
 <!---################ MenuBar Sticky Addition ##############-->
    </script>
-
-    <!--######################  MENuBAR JS ##################-->
-   <!-- <script type="text/javascript">
-    window.addEventListener('scroll',function() {
-    var menubar = document.getElementById('bar');
-    var sticky = menubar.offsetTop;
-    sticky = 400;
-    console.log(pageYOffset);
-     if (window.pageYOffset >= sticky) {
-        console.log("running if");
-        menubar.classList.add('sticky');
-        content.style.marginTop = 90;
-      }
-      else {
-        console.log("else");
-        menubar.classList.remove('sticky');
-          content.style.marginTop = 0;
-      }
-      if(window.pageYOffset >= 800)
-      {
-        console.log("bulllll");
-       // //document.getElementById('gototop').classList.add('showarrow');
-        document.getElementById('icon-bar').style.display="block";
-      //    document.getElementById('icons').classList.add('showarrow');
-
-      }
-      else
-      {
-document.getElementById('gototop').classList.remove('showarrow');
-document.getElementById('icon-bar').style.display="none";
-//document.getElementById('icons').classList.remove('showarrow');
-
-      }
-
-
-    });
-
-    var f = 0;
-</script>-->
-
 </body>
 <script type="text/javascript" src="mobilemenu.js"></script>
 <script type="text/javascript" src="reg.js"></script>
