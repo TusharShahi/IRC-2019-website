@@ -117,7 +117,7 @@ font-family: 'montserrat';
           min-width: 20px;
           display: inline-block;
           }
- 
+
 /**MENU BAR **/
 
 #menubar
@@ -216,7 +216,7 @@ margin: 0px;
 
   }
 
-  .buttondiv 
+  .buttondiv
   {
     display: flex;
     padding: 20px 0px;
@@ -282,6 +282,7 @@ vertical-align: middle;
     position: relative;
     font-size: 90px;
     text-shadow: 4px 4px #A9DFBF;
+    letter-spacing: 24px;
 }
 .faqhead
 {
@@ -521,7 +522,8 @@ vertical-align: middle;
 
 @media screen and (min-width: 601px) {
   .top h1 {
-    font-size: 30px;
+    font-size: 70px;
+    letter-spacing: 16px;
   }
 }
 
@@ -529,6 +531,8 @@ vertical-align: middle;
 @media screen and (max-width: 600px) {
   .top h1{
     font-size: 30px;
+    top:50px;
+    letter-spacing: 1px;
   }
 }
   #content
@@ -648,7 +652,7 @@ width: 80%;
               flex-wrap: wrap;
                 flex-direction:column;
             }
-            
+
             .imagesa>div
             {
               margin: 0 auto;
@@ -727,7 +731,7 @@ width: 80%;
 @media screen and (max-width: 600px) {
   .ruleshead h1{
     font-size: 30px;
-  }
+      }
   li{
     width: 100%;
   }
@@ -823,6 +827,8 @@ flex-wrap: wrap;
 @media screen and (max-width: 600px) {
   .faqhead h1{
     font-size: 30px;
+    letter-spacing: 8px;
+    top:56px;
   }
   #howtoreach>div{
     width: 80%;
@@ -855,7 +861,7 @@ height: 220px;
           min-width: 20px;
           display: inline-block;
           }
-  
+
 @media screen and (max-width: 600px) {
   #inconsins{
     margin-left:20%;
@@ -1019,7 +1025,7 @@ height: 220px;
 {
     font-family: 'montserrat';
     text-align: justify;
-    width: 80%; 
+    width: 80%;
     margin: 0 auto;
     margin-top: 80px;
 }
@@ -1259,7 +1265,7 @@ width: auto;
 #note h2
 {
   font-size: 20px;
-} 
+}
 
 #footerwrapper
     {
@@ -1274,7 +1280,7 @@ width: auto;
     }
 
  #footerwrapper div:nth-child(1),#footerwrapper div:nth-child(3)
- 
+
  {
   width: 375px;
  }

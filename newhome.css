@@ -42,7 +42,7 @@ font-family: 'montserrat';
 {
   margin-top: 0px;
   background-position: 0px 0px;
-  height: 400px;
+  height: 420px;
   background-size: cover;
 }
 
@@ -75,7 +75,7 @@ font-family: 'montserrat';
           min-width: 20px;
           display: inline-block;
           }
- 
+
 
 @media screen and (max-width: 600px) {
  }
@@ -513,7 +513,8 @@ height: 100%;
 }
 .top
     {
-        background-image: url(images/meme.jpg);
+        background-image: url(images/topimg.png);
+        background-size: 99.9% 99.9%;
 
     }
     #content,#roverchallengeseries
@@ -710,7 +711,7 @@ width: 100px;
       margin:0px 15px;
     }
 
-  
+
     /* ////// */
     /* FOOTER ENDS */
     /* ////// */
@@ -912,7 +913,7 @@ width: 80px;
 
  background-repeat: no-repeat;
  background-color: #181849;
- background-position-x: 50%; 
+ background-position-x: 50%;
 }
 #menubar
 {
@@ -992,7 +993,7 @@ width: auto;
       width: auto;
     }
  #footerwrapper div:nth-child(1),#footerwrapper div:nth-child(3)
- 
+
  {
   width: 375px;
  }
