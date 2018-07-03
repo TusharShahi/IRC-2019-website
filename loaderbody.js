@@ -1,91 +1,29 @@
  $(document).ready(function(){
-      if(screen.width<550){
-        $("#loader").hide();
-        $("#website").show();
-        $("#icon-bar").hide();
-      }
-      else
-      {
-        $("#loader").show();
-
-  //      $("#website").hide();
-
-//        $("#website").delay(8000).fadeIn(700);
-      }
+      
+$("#gototop").on("click",function(event){
+      console.log("bb");
+      event.preventDefault();
+      $(" html, body").animate({scrollTop:0},1500);
+      return false;
+    });
+   
+$('#subscriptionForm').submit(function(event)
+{
+                event.preventDefault();
+                alert("You have successfully subscribed to our updates!"); 
+            var formData = $("#subscriptionForm").serialize();
+          $.ajax({
+    type: 'POST',
+    url: $("#subscriptionForm").attr('action'),
+    email: formData
+}).done(function()
+{
+  alert("You have subscribed");
+});
+            }); 
     });
 
- /*     setTimeout(function(){
-  $('#loader').remove();
-}, 8000);*/
-
-
-      ////////facebook res
-
-      /*function setupFBframe(frame) {
-  var container = frame.parentNode;
-
-  var containerWidth = container.offsetWidth;
-  var containerHeight = container.offsetHeight;
-
-  var src =
-    "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FIndianRoverChallenge&tabs=timeline&width=240&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=187120771934670" +
-    "?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook" +
-    "&tabs=timeline" +
-    "&width=" +
-    containerWidth +
-    "&height=" +
-    containerHeight +
-    "&small_header=false" +
-    "&adapt_container_width=false" +
-    "&hide_cover=true" +
-    "&hide_cta=true" +
-    "&show_facepile=true" +
-    "&appId";
-
-  frame.width = containerWidth;
-  frame.height = containerHeight;
-  frame.src = src;
-}
-
-/* begin Document Ready                                     
-############################################ */
-
-//document.addEventListener('DOMContentLoaded', function() {
- // var facebookIframe = document.querySelector('#facebook_iframe');
- // setupFBframe(facebookIframe);
- 
-  /* begin Window Resize                                    
-  ############################################ */
-  
-  // Why resizeThrottler? See more : https://developer.mozilla.org/ru/docs/Web/Events/resize
-  /*(function() {
-    window.addEventListener("resize", resizeThrottler, false);
-
-    var resizeTimeout;
-
-    function resizeThrottler() {
-      if (!resizeTimeout) {
-        resizeTimeout = setTimeout(function() {
-          resizeTimeout = null;
-          actualResizeHandler();
-        }, 66);
-      }
-    }
-
-    function actualResizeHandler() {
-      document.querySelector('#facebook_iframe').removeAttribute('src');
-      setupFBframe(facebookIframe);
-    }
-  })();
-  /* end Window Resize
-  ############################################ */
-//});*/
-/* end Document Ready                                     
-############################################ */
-
-
-// animation for header
-    document.getElementsByClassName('top')[0].addEventListener('mousemove', function (event) {
+document.getElementsByClassName('top')[0].addEventListener('mousemove', function (event) {
       if (window.event) { // IE fix
           event = window.event;
       }
@@ -93,7 +31,7 @@
     var mousex = event.clientX;
       var mousey = event.clientY;
       var bgheader = document.getElementsByClassName('top');
-      if(document.width()>768) bgheader[0].style.backgroundPosition = mousex/30 + 'px ' + mousey/40 + 'px';
+      if(document.width>768) bgheader[0].style.backgroundPosition = mousex/30 + 'px ' + mousey/40 + 'px';
   });
     
   //window.onscroll = menuBar;
@@ -101,6 +39,7 @@
   var menubar = document.getElementById('bar');
   var sticky = menubar.offsetTop;
   sticky = 400;
+  var content = document.getElementById("content");
   console.log(pageYOffset);
    if (window.pageYOffset >= sticky) {
       console.log("running if");
