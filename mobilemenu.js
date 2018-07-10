@@ -1,3 +1,4 @@
+
 		var dir = 1;
 		//animation for side bar
 		var slidein = function()
