@@ -1841,3 +1841,8 @@ width: auto;
     margin-bottom: 5px !important;
     padding-top: 20px !important;
   }
+#Registration_irc_form{
+  width: 80%;
+  text-align: center;
+  margin: 20px auto;
+}
