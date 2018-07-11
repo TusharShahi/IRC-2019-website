@@ -283,6 +283,7 @@ vertical-align: middle;
     font-size: 90px;
     text-shadow: 4px 4px #A9DFBF;
     letter-spacing: 24px;
+    font-weight: 400;
 }
 .faqhead
 {
@@ -533,6 +534,7 @@ vertical-align: middle;
     font-size: 30px;
     top:50px;
     letter-spacing: 1px;
+    text-shadow: none;
   }
 }
   #content
@@ -829,6 +831,8 @@ flex-wrap: wrap;
     font-size: 30px;
     letter-spacing: 8px;
     top:56px;
+    text-shadow: none;
+    font-weight: normal;
   }
   #howtoreach>div{
     width: 80%;
@@ -925,19 +929,24 @@ height: 220px;
 
 .overlay {
   position: relative;
-  bottom: 70px;
+  bottom: 64px;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
   width: 340px;
   transition: .5s ease;
-  opacity:0;
+  opacity:1;
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   padding: 20px;
   text-align: center;
   font-family: 'Montserrat';
+  max-width: 285px;
+  display: flex;
+  flex-shrink: 1;
+
 }
+
 
 .im1:hover .overlay
  {
@@ -1828,3 +1837,12 @@ width: auto;
       left: 0px;
       right: 0px;
     }
+  .change_h2_margin_bottom{
+    margin-bottom: 5px !important;
+    padding-top: 20px !important;
+  }
+#Registration_irc_form{
+  width: 80%;
+  text-align: center;
+  margin: 20px auto;
+}
