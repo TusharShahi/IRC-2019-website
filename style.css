@@ -1025,6 +1025,7 @@ height: 220px;
     position: relative;
     font-size: 90px;
     text-shadow: 4px 4px #4F4F4F;
+    font-weight: 300 !important;
 }
 .ruleshead
 {
