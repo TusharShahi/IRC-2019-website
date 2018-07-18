@@ -315,6 +315,21 @@ margin: 0px;
 /* SOCIAL MEDIA ICONS ENDS */
 /* ////// */
 
+/* ////// */
+/* WHAT'S NEW SECTION */
+/* ////// */
+
+.whatsnew
+{
+  background: grey;
+  font-family: 'Montserrat'
+  width: 100%;
+  display: inline-block;
+}
+.whatsnew p, h4
+{
+  font-family: 'Montserrat'
+}
 
 /* ////// */
 /* COUNTDOWN */
@@ -514,7 +529,10 @@ height: 100%;
 .top
     {
         background-image: url(images/topimg.png);
-        background-size: 99.9% 99.9%;
+        background-size: 800px 420px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: RGB(13,21,34);
 
     }
     #content,#roverchallengeseries
@@ -523,7 +541,7 @@ height: 100%;
     }
     #content>div,#roverchallengeseries>div
     {
-      width: 80%;
+      width: 100%;
       margin: 0 auto;
       text-align: center;
     }
@@ -782,7 +800,6 @@ color: white;
 font-size: 20px;
 width: 80%;
 position: relative;
-margin-top: 50px;
 margin-left: 30px;
 padding-top: 50px;
 padding-left: 80px;
