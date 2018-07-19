@@ -138,7 +138,7 @@ font-family: 'montserrat';
 
 #logoimage img
 {
-  width: 150px;
+  width: 120px;
   height: 90px;
 }
 #menubar div
@@ -844,7 +844,7 @@ h2
 }
 .top
 {
-height: 300px;
+height: 400px;
 }
 #bar
 {
@@ -1182,7 +1182,8 @@ width: auto;
 }
 .top
 {
-  height: 220px;
+  height: 450px;
+  background-color: RGB(13,21,34);
 }
 
 #sidebar
@@ -1306,6 +1307,8 @@ width: auto;
 .top
 {
   height: 200px;
+  background-size: 420px 200px;
+  background-color: RGB(13,21,34);
 }
 
 #buttonimage img

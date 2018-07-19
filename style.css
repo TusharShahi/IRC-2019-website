@@ -132,7 +132,7 @@ font-family: 'montserrat';
 
 #logoimage img
 {
-  width: 150px;
+  width: 120px;
   height: 90px;
 }
 #menubar div
@@ -506,7 +506,7 @@ vertical-align: middle;
     color: white;
     top: 100px;
     position: relative;
-    font-size: 90px;
+    font-size: 80px;
     text-shadow: 4px 4px grey;
 }
 
@@ -518,19 +518,17 @@ vertical-align: middle;
     padding-top: 30px;
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (max-width: 601px) {
   .top h1 {
-    font-size: 95px;
+    font-size: 70px;
   }
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
   .top h1{
-    font-size: 30px;
-    top:50px;
-    letter-spacing: 1px;
-    text-shadow: none;
+    font-size: 45px;
+    top:100px;
   }
 }
   #content
@@ -618,7 +616,7 @@ height: 220px;
 }
 @media screen and (max-width: 480px) {
   .ruleshead{
-    height: 200px !important;
+    height: 400px !important;
   }
   .resourcesimg2 img{
     width: 50%;
@@ -720,10 +718,13 @@ width: 80%;
         float:none;
     }
 }
-@media screen and (min-width: 601px) {
+@media screen and (max-width: 601px) {
   .ruleshead h1 {
-    font-size: 90px;
+    font-size: 40px !important;
   }
+}
+@media screen and (max-width: 490px){
+  .faqbg { background-size: 600px 300px !important;}
 }
 
 @media screen and (max-width: 600px) {
@@ -824,11 +825,8 @@ flex-wrap: wrap;
 }
 @media screen and (max-width: 600px) {
   .faqhead h1{
-    font-size: 30px;
-    letter-spacing: 8px;
-    top:56px;
-    text-shadow: none;
-    font-weight: normal;
+    font-size: 70px;
+    top: 120px;
   }
   #howtoreach>div{
     width: 80%;
@@ -848,7 +846,7 @@ height: 200px;
 }}
 @media screen and (max-width: 650px){
 .faqhead{
-height: 220px;
+height: 400px;
 }}
 #socailm
        {
@@ -1019,7 +1017,7 @@ height: 220px;
     color: white;
     top: 100px;
     position: relative;
-    font-size: 95px;
+    font-size: 80px;
     text-shadow: 4px 4px #4F4F4F;
 }
 .ruleshead
@@ -1482,7 +1480,7 @@ width: auto;
 }
 .top
 {
-  height: 220px;
+  height: 400px;
 }
 
 #buttonimage img
@@ -1582,8 +1580,15 @@ width: auto;
   margin: auto;
   padding-top: 20px;
   padding-left: 0px;
+}}
+@media screen and (max-width: 465px)
+{
+.top
+{
+  background-size: 300px 300px;
 }
 }
+
 @media screen and (max-width: 480px)
 {
 #menubar
@@ -1602,7 +1607,7 @@ width: auto;
 }
 .top
 {
-  height: 200px;
+  height: 400px;
 }
 
 #buttonimage img
@@ -1708,14 +1713,26 @@ width: auto;
 @media screen and (min-width: 601px) {
   .top {
     font-size: 80px;
+    height: 400px;
   }
 }
-
+@media screen and (max-width: 390px)
+{
+  .top{
+    height: 300px !important;
+    background-size: 750px 400px !important;
+  }
+  .top h1
+  {
+    top: 85px;
+  }
+}
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
   .top{
     font-size: 30px;
-    background-size: cover;
+    background-size: 550px 240px !important;
+    height: 320px;
 
   }
 }
