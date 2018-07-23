@@ -723,8 +723,9 @@ width: 80%;
     font-size: 40px !important;
   }
 }
-@media screen and (max-width: 490px){
-  .faqbg { background-size: 600px 300px !important;}
+@media screen and (max-width: 650px){
+  .faqbg { background-size: 550px 240px !important; height: 320px}
+
 }
 
 @media screen and (max-width: 600px) {
@@ -826,10 +827,10 @@ flex-wrap: wrap;
 @media screen and (max-width: 600px) {
   .faqhead h1{
     font-size: 70px;
-    top: 120px;
+    top: 105px;
   }
   #howtoreach>div{
-    width: 80%;
+    width: 80%
   }
 }
 @media screen and (max-width: 480px){
@@ -846,7 +847,7 @@ height: 200px;
 }}
 @media screen and (max-width: 650px){
 .faqhead{
-height: 400px;
+height: 320px;
 }}
 #socailm
        {
