@@ -1860,3 +1860,49 @@ width: auto;
   text-align: center;
   margin: 20px auto;
 }
+.mahe-mrm-img{
+  display: flex;
+  margin: 0px auto;
+}
+.mahe-mrm-img{
+  flex:1;
+  width: 80%;
+  margin: 0px auto;
+
+}
+.mahe-mrm-img >div > img{
+  vertical-align: center;
+  /* padding: 30px; */
+  padding: 20px
+
+}
+#mahe-pic{
+
+vertical-align: center;
+height: 300px;
+width: 500px;
+
+}
+#mrm-pic{
+  vertical-align: center;
+  height: 300px;
+  width: 500px;
+}
+ @media screen and (max-width:600px) {
+   .mahe-mrm-img{
+     flex-direction: column;
+   }
+   .mahe-mrm-img >div >img{
+     padding: 10px;
+     padding-left: 0px !important;
+   }
+   #mahe-pic{
+     height: 200px;
+     width: 300px;
+   }
+   #mrm-pic{
+     height: 200px;
+     width: 300px;
+   }
+
+ }
