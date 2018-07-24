@@ -527,7 +527,7 @@ vertical-align: middle;
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
   .top h1{
-    font-size: 45px;
+    font-size: 35px;
     top:100px;
   }
 }
@@ -826,8 +826,8 @@ flex-wrap: wrap;
 }
 @media screen and (max-width: 600px) {
   .faqhead h1{
-    font-size: 70px;
-    top: 105px;
+    font-size: 60px;
+    top: 87px;
   }
   #howtoreach>div{
     width: 80%
