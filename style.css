@@ -1899,6 +1899,7 @@ width: 500px;
    #mahe-pic{
      height: 200px;
      width: 300px;
+     opacity: 0.7;
    }
    #mrm-pic{
      height: 200px;
@@ -1906,3 +1907,17 @@ width: 500px;
    }
 
  }
+ #Mahe-web-link,
+ #mrm-manipal-link{
+   text-decoration: none;
+}
+#innovation-image{
+  width: 42%;
+}
+@media screen and (max-width:600px) {
+
+  #innovation-image{
+    width: 100% !important;
+  }
+
+}
