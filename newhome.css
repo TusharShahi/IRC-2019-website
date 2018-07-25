@@ -1380,3 +1380,8 @@ width: auto;
   from{ bottom:-100px; opacity:0 }
   to{ bottom:0; opacity:1 }
 }*/
+placeholder{
+  font-family: Montserrat;
+  color: #ccc;
+  padding-left: 5px;
+}
