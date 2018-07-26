@@ -32,7 +32,7 @@ document.getElementById('icon-bar').style.display="none";
     
     });
 
-    var f = 0;
+   /* var f = 0;
 
 
     function setupFBframe(frame) {
@@ -63,7 +63,7 @@ document.getElementById('icon-bar').style.display="none";
 
 /* begin Document Ready                                     
 ############################################ */
-
+/*
 document.addEventListener('DOMContentLoaded', function() {
   var facebookIframe = document.querySelector('#facebook_iframe');
   //setupFBframe(facebookIframe);
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
   ############################################ */
   
   // Why resizeThrottler? See more : https://developer.mozilla.org/ru/docs/Web/Events/resize
-  (function() {
+ /* (function() {
     window.addEventListener("resize", resizeThrottler, false);
 
     var resizeTimeout;
@@ -90,9 +90,9 @@ document.addEventListener('DOMContentLoaded', function() {
       document.querySelector('#facebook_iframe').removeAttribute('src');
     //  setupFBframe(facebookIframe);
     }*/
-  })();
+  //})();
   /* end Window Resize
   ############################################ */
-});
+//});
 /* end Document Ready                                     
 ############################################ */

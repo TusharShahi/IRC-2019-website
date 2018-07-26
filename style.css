@@ -658,6 +658,11 @@ width: 80%;
             {
               width: auto;
             }
+            .mahe-mrm-img>div
+{
+	text-align: center;
+	display: block;
+}
         }
 
 
@@ -1732,6 +1737,10 @@ width: auto;
   {
     top: 85px;
   }
+  .overlay
+  {
+  	width: 70%;
+  }
 }
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
@@ -1866,36 +1875,45 @@ width: auto;
   margin: 20px auto;
 }
 .mahe-mrm-img{
-  display: flex;
+ 	
   margin: 0px auto;
+
 }
 .mahe-mrm-img{
   flex:1;
   width: 80%;
   margin: 0px auto;
+  text-align: center;
 
+}
+.mahe-mrm-img>div
+{
+	width: 45%;
+	text-align: center;
+	display: inline-block;
 }
 .mahe-mrm-img >div > img{
   vertical-align: center;
+
   /* padding: 30px; */
   padding: 20px
 
 }
 #mahe-pic{
-
 vertical-align: center;
-height: 300px;
-width: 500px;
-
+width: 80%;
+margin:  0 auto;
 }
 #mrm-pic{
   vertical-align: center;
-  height: 300px;
-  width: 500px;
-}
+width: 80%;
+margin:  0 auto;}
  @media screen and (max-width:600px) {
+   
    .mahe-mrm-img{
+   display: flex;
      flex-direction: column;
+   	text-align: center;
    }
    .mahe-mrm-img >div >img{
      padding: 10px;
