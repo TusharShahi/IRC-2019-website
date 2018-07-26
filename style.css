@@ -516,6 +516,9 @@ vertical-align: middle;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     padding-top: 30px;
+    z-index: 1;
+    position: relative;
+    left: -80px;
 }
 
 @media screen and (max-width: 601px) {
