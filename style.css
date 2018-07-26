@@ -519,6 +519,7 @@ vertical-align: middle;
     z-index: 1;
     position: relative;
     left: -80px;
+    z-index: -1;
 }
 
 @media screen and (max-width: 601px) {
