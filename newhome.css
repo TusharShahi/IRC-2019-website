@@ -1402,7 +1402,9 @@ placeholder{
   color: white;
   font-size: 11.5px;
   padding: 3px 0px 5px 0px;
+margin-bottom: 0px !important;
 }
+
 #logo-mrm-footer{
   padding-top: 0.5px;
   padding-right: 1px;
