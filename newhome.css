@@ -158,6 +158,7 @@ font-family: 'montserrat';
     text-decoration: none;
     font-size: 18px;
     margin: 35px 10px;
+    transition-duration: 0.5s;  
 
 }
 
@@ -326,9 +327,14 @@ margin: 0px;
   width: 100%;
   display: inline-block;
 }
-.whatsnew >p, >h3
+.whatsnew p, h3
 {
   font-family: 'Montserrat'
+}
+.whatsnew a
+{
+  text-decoration: none;
+  color: RGB(13,28,150)
 }
 #rulebook-update{
   text-decoration: none !important;
@@ -597,11 +603,12 @@ height: 100%;
         cursor: pointer;
         font-family: 'Montserrat', sans-serif;
         box-shadow: 1px 1px #000000;
+        transition-duration: 0.5s;
     }
     .button:hover
     {
         background-color: #D74764;
-        transition: 0.2s ease-in;
+        transition: 0.5s;
     }
 
 /* ////// */
@@ -1407,5 +1414,14 @@ margin-bottom: 0px !important;
 
 #logo-mrm-footer{
   padding-top: 0.5px;
-  padding-right: 1px;
+  padding-bottom: 0.5px;
+  padding-left: 1px;
+}
+.whatsnew a:hover
+{
+  color: black;
+}
+.whatsnew a
+{
+  transition-duration: 1s;
 }
